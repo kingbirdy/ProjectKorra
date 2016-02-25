@@ -1,6 +1,7 @@
 package com.projectkorra.projectkorra.event;
 
 import org.bukkit.entity.Player;
+import org.bukkit.event.Cancellable;
 import org.bukkit.event.Event;
 import org.bukkit.event.HandlerList;
 
@@ -9,7 +10,7 @@ import org.bukkit.event.HandlerList;
  * 
  * @author savior67
  */
-public class BindChangeEvent extends Event {
+public class BindChangeEvent extends Event implements Cancellable {
 	
 	private static final HandlerList handlers = new HandlerList();
 	private Player player;
